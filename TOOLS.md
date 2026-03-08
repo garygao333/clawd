@@ -49,9 +49,26 @@ gog gmail messages search 'thread:<threadId>' --account gary@trychert.com --json
 
 ## iMessage (primary)
 
-- Only message Gary via iMessage to +17185619177
-- Never message groups or other users
+- Message Gary via iMessage to +17185619177
+- BDR leads: message approved leads from the CSV (see BDR.md) — requires Gary's approval before each batch
+- Never message groups or anyone not in the above two categories
 - Keep messages under 4000 chars (chunk limit)
+
+### Sending to leads (BDR)
+
+```bash
+# Send a message to a lead
+imsg send --to +1XXXXXXXXXX --text "message here" --service imessage
+
+# Check if a number works with iMessage (send will fail if not registered)
+# If it fails, try the next number for that lead
+
+# Check for replies from leads
+imsg chats --limit 50
+```
+
+### Lead CSV location
+/Users/a222/Desktop/Vela Outbound Manual #2 - List #2 (signalhire).csv
 
 ## Telegram (backup)
 

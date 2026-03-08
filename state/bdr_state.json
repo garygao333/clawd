@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "daily": {
+    "date": null,
+    "messagesSent": 0
+  },
+  "currentBatch": 0,
+  "leads": [],
+  "pendingApproval": null
+}
